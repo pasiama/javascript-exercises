@@ -47,10 +47,23 @@ console.log(`Today ${showActualDay} on the ${date} of ${equivalentMonth}, I star
 
 
 // 2. Print Current Window Contents
-
 // Write a JavaScript program to print the current window contents. 
 
 function printout(){
       console.log("i have printed out")
       window.print();
 }
+
+// 4. Calculate Area of Triangle (Sides: 5, 6, 7)
+// Write a JavaScript program to find the area of a triangle where three sides are 5, 6, 7. 
+// area od triangle with 3 sides is A = √[s(s-a)(s-b)(s-c)] where s is parameter with i also calculatd as the sum of all three sides divided by 2
+
+const side1 = 5;
+const side2 = 6;
+const side3 = 7;
+
+const perimeter = (side1 + side2 + side3)/ 2;
+console.log("perimeter", perimeter)
+
+const area = Math.sqrt(perimeter * ((perimeter - side1) * (perimeter - side2) * (perimeter - side3)))
+console.log("area", area)
