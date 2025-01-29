@@ -44,3 +44,13 @@ const hour = (hours >= 12)? hours -12 : hours
 console.log(hours, minutes, seconds, hour)
 
 console.log(`Today ${showActualDay} on the ${date} of ${equivalentMonth}, I started rela learning of Javascript. Now it is ${hour} and all i could achieve is this`)
+
+
+// 2. Print Current Window Contents
+
+// Write a JavaScript program to print the current window contents. 
+
+function printout(){
+      console.log("i have printed out")
+      window.print();
+}
